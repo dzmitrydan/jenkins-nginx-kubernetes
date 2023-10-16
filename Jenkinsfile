@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/my-repo.git'
+                git branch: 'main', url: 'https://github.com/dzmitrydan/jenkins-nginx-kubernetes.git'
             }
         }
         stage('Deploy') {
