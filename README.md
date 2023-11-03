@@ -1,5 +1,8 @@
 # jenkins-docker-nginx-kubernetes
 
+## Install Jenkins (Hands-on lab)
+Task: Installing and Configuring Jenkins Server
+
 #### 1. install and configure Nginx server using Docker to access Jenkins without including the port number in the URL('http://jenkins')
 - Docker Compose
 - `localhost` -> `jenkins` (local machine: **mac**)
@@ -14,21 +17,37 @@
 - email settings
 
 #### 3. Jenkins plugins: 
-- Green Balls, 
-- ChuckNorris, 
-- Multiple SCMs, 
-- Email Extension, 
+- Green Balls
+- ChuckNorris
+- Multiple SCMs
+- Email Extension
 - Role-based Authorization Strategy
 
 #### 4. Create a freestyle job (hello-jenkins-job)
 - simple build step that outputs the message "Hello Jenkins!" to the console (`echo "Hello Jenkins!"`)
 - trigger the build and configure the job to build periodically every 5 minutes (`H/5 * * * *`)
 
+![screenshot](readme-assets/hello-jenkins-job-1.png)
+![screenshot](readme-assets/hello-jenkins-job-2.png)
+![screenshot](readme-assets/hello-jenkins-job-3.png)
+
 #### 5. Create four freestyle jobs: 
 - ADMIN-job1
 - ADMIN-job2
 - USER-job1
 - USER-job2
+
+![screenshot](readme-assets/freestyle-jobs-1.png)
+![screenshot](readme-assets/freestyle-jobs-2.png)
+![screenshot](readme-assets/freestyle-jobs-3.png)
+
+![creenshot](readme-assets/freestyle-jobs-1.png)
+![creenshot](readme-assets/freestyle-jobs-2.png)
+
+![screenshot](readme-assets/job-settings-1.png)
+![screenshot](readme-assets/job-settings-2.png)
+![screenshot](readme-assets/job-settings-3.png)
+![screenshot](readme-assets/job-settings-4.png)
 
 #### 7. Configure the `Role Based Strategy` plugin
 - admin
@@ -38,3 +57,48 @@
 - read-only
   - view jobs with the prefix 'USER'
 
+![screenshot](readme-assets/role-based-strategy-settings-1.png)
+![screenshot](readme-assets/role-based-strategy-settings-2.png)
+![screenshot](readme-assets/role-based-strategy-settings-3.png)
+![screenshot](readme-assets/role-based-strategy-settings-4.png)
+
+![screenshot](readme-assets/role-based-strategy-jobs-1.png)
+![screenshot](readme-assets/role-based-strategy-jobs-2.png)
+
+![screenshot](readme-assets/role-based-strategy-job-1.png)
+![screenshot](readme-assets/role-based-strategy-job-2.png)
+![screenshot](readme-assets/role-based-strategy-job-3.png)
+![screenshot](readme-assets/role-based-strategy-job-2.png)
+
+## Jenkins - Continuous Deployment (Hands-on lab)
+
+```
+kubectl create -f jenkins.yaml --namespace jenkins
+```
+```
+kubectl apply -f jenkins.yaml
+```
+```
+kubectl get pods
+```
+```
+kubectl logs jenkins-deployment-74866fd7b5-cbkcl
+```
+```
+kubectl run jenkins-deployment-74866fd7b5-cbkcl --image=jenkins --restart=Never
+```
+```
+kubectl version
+```
+```
+minikube version
+```
+```
+minikube start
+```
+```
+minikube status
+```
+```
+minikube stop
+```
