@@ -38,16 +38,11 @@ Task: Installing and Configuring Jenkins Server
 - USER-job2
 
 ![screenshot](readme-assets/freestyle-jobs-1.png)
-![screenshot](readme-assets/freestyle-jobs-2.png)
-![screenshot](readme-assets/freestyle-jobs-3.png)
 
-![creenshot](readme-assets/freestyle-jobs-1.png)
-![creenshot](readme-assets/freestyle-jobs-2.png)
-
-![screenshot](readme-assets/job-settings-1.png)
-![screenshot](readme-assets/job-settings-2.png)
-![screenshot](readme-assets/job-settings-3.png)
-![screenshot](readme-assets/job-settings-4.png)
+**Job settings**
+![screenshot](readme-assets/job-setting-1.png)
+![screenshot](readme-assets/job-setting-2.png)
+![screenshot](readme-assets/job-setting-3.png)
 
 #### 7. Configure the `Role Based Strategy` plugin
 - admin
@@ -57,18 +52,21 @@ Task: Installing and Configuring Jenkins Server
 - read-only
   - view jobs with the prefix 'USER'
 
+**Role-based Authorization Strategy Settings**
 ![screenshot](readme-assets/role-based-strategy-settings-1.png)
 ![screenshot](readme-assets/role-based-strategy-settings-2.png)
 ![screenshot](readme-assets/role-based-strategy-settings-3.png)
 ![screenshot](readme-assets/role-based-strategy-settings-4.png)
 
-![screenshot](readme-assets/role-based-strategy-jobs-1.png)
-![screenshot](readme-assets/role-based-strategy-jobs-2.png)
+**Availability of jobs for different users**
+![screenshot](readme-assets/freestyle-jobs-2.png)
+![screenshot](readme-assets/freestyle-jobs-3.png)
+![screenshot](readme-assets/freestyle-jobs-4.png)
 
-![screenshot](readme-assets/role-based-strategy-job-1.png)
-![screenshot](readme-assets/role-based-strategy-job-2.png)
-![screenshot](readme-assets/role-based-strategy-job-3.png)
-![screenshot](readme-assets/role-based-strategy-job-2.png)
+![screenshot](readme-assets/job-1.png)
+![screenshot](readme-assets/job-2.png)
+![screenshot](readme-assets/job-3.png)
+![screenshot](readme-assets/job-4.png)
 
 ## Jenkins - Continuous Deployment (Hands-on lab)
 
