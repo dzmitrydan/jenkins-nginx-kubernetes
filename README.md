@@ -1,9 +1,9 @@
 # jenkins-docker-nginx-kubernetes
 
-## Install Jenkins (Hands-on lab)
+## 1. Install Jenkins (Hands-on lab)
 Task: Installing and Configuring Jenkins Server
 
-#### 1. install and configure Nginx server using Docker to access Jenkins without including the port number in the URL('http://jenkins')
+#### Task 1: Install and configure Nginx server using Docker to access Jenkins without including the port number in the URL('http://jenkins')
 - Docker Compose
 - `localhost` -> `jenkins` (local machine: **mac**)
   - change `hosts` file: `sudo nano /etc/hosts` 
@@ -68,7 +68,7 @@ Task: Installing and Configuring Jenkins Server
 ![screenshot](readme-assets/job-3.png)
 ![screenshot](readme-assets/job-4.png)
 
-## Jenkins - Continuous Deployment (Hands-on lab)
+## Task 2: Jenkins - Continuous Deployment (Hands-on lab)
 
 ```
 kubectl create -f jenkins.yaml --namespace jenkins
