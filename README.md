@@ -11,6 +11,8 @@ Task: Installing and Configuring Jenkins Server
 - create file `nginx conf`
 - Login and install suggested Jenkins plugins
 
+![screenshot](readme-assets/jenkins-ip.png)
+
 #### 2. Jenkins settings in the global configuration UI
 - Java
 - authentication
